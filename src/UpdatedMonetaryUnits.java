@@ -63,8 +63,8 @@ public class UpdatedMonetaryUnits {
 				moneyArray[i] = centAmount / placeholder;
 			}
 		 
-		UpdatedMonetaryUnits.moneyAmount %= placeholder; // access the global variable -- update it within the function
-	 	return moneyArray[0];
+			UpdatedMonetaryUnits.moneyAmount %= placeholder; // access the global variable -- update it within the function
+			return moneyArray[0];
 		 
 		 } // end function
 		
