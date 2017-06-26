@@ -37,17 +37,17 @@ public class UpdatedMonetaryUnits {
 		
 		else if (currency == 2) {
 			
-		System.out.print("Enter a decimal dollar amount: ");
-		double dollarAmount = input.nextDouble(); // enter the dollar amount
-		moneyAmount = (int)(dollarAmount * 100); // total coins
+			System.out.print("Enter a decimal dollar amount: ");
+			double dollarAmount = input.nextDouble(); // enter the dollar amount
+			moneyAmount = (int)(dollarAmount * 100); // total coins
 		
 			
-		System.out.println("Here is the amount of $" + dollarAmount + " broken down: ");
-		System.out.println("Dollars   " + moneyConverter(moneyAmount, 100));
-		System.out.println("Quarters  " + moneyConverter(moneyAmount, 25));
-		System.out.println("Dimes     " + moneyConverter(moneyAmount, 10));
-		System.out.println("Nickels   " + moneyConverter(moneyAmount, 5));
-		System.out.println("Pennies   " + moneyConverter(moneyAmount, 1));
+			System.out.println("Here is the amount of $" + dollarAmount + " broken down: ");
+			System.out.println("Dollars   " + moneyConverter(moneyAmount, 100));
+			System.out.println("Quarters  " + moneyConverter(moneyAmount, 25));
+			System.out.println("Dimes     " + moneyConverter(moneyAmount, 10));
+			System.out.println("Nickels   " + moneyConverter(moneyAmount, 5));
+			System.out.println("Pennies   " + moneyConverter(moneyAmount, 1));
 		
 		
 			}
@@ -57,12 +57,11 @@ public class UpdatedMonetaryUnits {
 	
 		public static int moneyConverter(int centAmount, int placeholder) { // function to break down change 
 		 
-		 int i = 0;
-		 int[] moneyArray = new int[10];
-		 for (i = 0; i < 1; i++) {
-			 moneyArray[i] = centAmount / placeholder;
-			 
-		 	}
+			int i = 0;
+			int[] moneyArray = new int[10];
+			for (i = 0; i < 1; i++) {
+				moneyArray[i] = centAmount / placeholder;
+			}
 		 
 		UpdatedMonetaryUnits.moneyAmount %= placeholder; // access the global variable -- update it within the function
 	 	return moneyArray[0];
